@@ -167,7 +167,7 @@ local UI = ({
 
     language = "English",
     user_data = {
-        username = (user or "User"),
+        username = (user or "Dev"),
         uid = 1
     },
     shared = {
