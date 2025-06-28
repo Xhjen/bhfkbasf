@@ -167,7 +167,7 @@ local UI = ({
 
     language = "English",
     user_data = {
-        username = (user or "Dev"),
+        username = (user or "User"),
         uid = 1
     },
     shared = {
@@ -3295,10 +3295,10 @@ framework.modules.signals.connection(run_service["RenderStepped"], function(dt)
             local avg_fps = fps:GetValue();
             local avg_ping = math.floor(ping:GetValue());
             local display_game = "V2";
-            local user_type = (LPH_OBFUSCATED and "Public") or "By InsolenceX";  -- Set the user type here
+            local user_type = (LPH_OBFUSCATED and "Public") or "Developer";  -- Set the user type here
     
             watermark:update_text(string.format(
-                'Insolence | PING <font color="%s">%d</font> | FPS <font color="%s">%d</font> | Build <font color="%s">%s</font> | User <font color="%s">%s</font>', 
+                'Insolence | PING <font color="%s">%d</font> | FPS <font color="%s">%d</font> | Build <font color="%s">%s</font> | Dev <font color="%s">%s</font>', 
                 accent, avg_ping, accent, avg_fps, accent, display_game, accent, user_type
             ));
         end;
